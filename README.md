@@ -1,6 +1,39 @@
-conda create -n tff_env python=3.9 -y
-conda activate tff_env
+# Federated Learning Framework with TensorFlow
 
-pip install tensorflow==2.14.1
-pip install tensorflow-federated==0.86.0
-pip install tensorflow-privacy==0.9.0
+This repository compares two FL frameworks:
+
+- **Flower + TensorFlow**
+- **TensorFlow Federated (TFF)**
+
+The goal is to benchmark usability and behavior on distributed compute nodes (CloudLab).
+
+---
+
+## Flower + TensorFlow
+
+### Environment
+```bash
+pip install flwr tensorflow
+```
+
+### Running
+Server (CloudLab node 1) 
+```bash
+python3 server.py
+```
+
+Client (CloudLab node 2)
+```bash
+python3 client.py <SERVER_IP:PORT>
+```
+For example:
+```bash
+python3 client.py 127.0.0.1:8080
+```
+
+## TensorFlow Federated (TFF)
+Unstarted
+
+### Environment
+
+### Running
