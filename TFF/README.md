@@ -57,5 +57,10 @@ pip install "tensorflow-federated==0.86.0"
 pip install tensorflow-privacy==0.9.0
 ```
 
+## Acknowledgments
+Environment compatibility reference for TFF and TF inspired by:  
+📎 https://hackmd.io/@thc1006/SJx5Ve1Iee  
+
+Thanks to the original author for summarizing version constraints clearly — saved lots of debugging time🔥
 
 

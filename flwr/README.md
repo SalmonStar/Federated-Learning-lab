@@ -25,3 +25,11 @@ For example:
 ```bash
 python3 client.py 127.0.0.1:8080
 ```
+
+## Acknowledgments
+The Flower baseline implementation in this directory is based on the official tutorial video:
+
+🎬 *Federated Learning with Flower & TensorFlow*  
+https://youtu.be/FGTc2TQq7VM?si=BQNHDaA5sgYRenOw  
+
+Thanks to the Flower team for providing clear instructional material and starter code.
