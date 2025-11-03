@@ -1,48 +1,40 @@
 # Federated Learning Framework with TensorFlow
-
-This repository compares two FL frameworks:
+This repository compares two Federated Learning (FL) frameworks:
 
 - **Flower + TensorFlow**
 - **TensorFlow Federated (TFF)**
 
-The goal is to benchmark usability and behavior on distributed compute nodes (CloudLab).
+The goal is to benchmark framework usability and behavior on distributed compute nodes (CloudLab), and later integrate security features such as adversarial clients, DP, and TEE protection.
 
 ---
 
-## Flower + TensorFlow
-
-### Environment
-```bash
-sudo apt update
-sudo apt install python3-pip # if you haven't install pip
-pip install flwr tensorflow
-```
-
-### Running
-Before running the code, make sure that you are in the flwr folder.
-```bash
-cd Federated-Learning-lab/flwr
-```
-
-Server (CloudLab node 1) 
-```bash
-python3 server.py
-```
-
-Client (CloudLab node 2)
-```bash
-python3 client.py <SERVER_IP:PORT>
-```
-For example:
-```bash
-python3 client.py 127.0.0.1:8080
-```
+## Project Structure
+Federated-Learning-lab/
+├── flwr/ # Flower + TensorFlow implementation
+└── TFF/ # TensorFlow Federated implementation
 
 ---
 
-## TensorFlow Federated (TFF)
-Unstarted
+## Quick Start
 
-### Environment
+| Framework | Description | Guide |
+|----------|------------|-------|
+Flower + TensorFlow | FL with standard TF clients | 👉 [`flwr/README.md`](./flwr/README.md) |
+TensorFlow Federated (TFF) | FL simulation environment with TF | 👉 [`TFF/README.md`](./TFF/README.md) |
 
-### Running
+> Each subfolder contains its own installation and execution guide.
+
+---
+
+## Status
+
+| Component | Status |
+|---|---|
+Flower baseline | ✅ working |
+TFF setup | 🔧 in progress |
+Adversarial client | 🔜 |
+DP experiment | 🔜 |
+TEE integration | 🔜 (future CloudLab phase) |
+
+Stay tuned. 🚀
+
