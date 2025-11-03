@@ -9,9 +9,11 @@ The goal is to benchmark framework usability and behavior on distributed compute
 ---
 
 ## Project Structure
+```bash
 Federated-Learning-lab/
 ├── flwr/ # Flower + TensorFlow implementation
 └── TFF/ # TensorFlow Federated implementation
+```
 
 ---
 
