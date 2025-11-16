@@ -57,6 +57,11 @@ pip install "tensorflow-federated==0.86.0"
 pip install tensorflow-privacy==0.9.0
 ```
 
+### TEE-structure
+finish ✅
+1. confidential_transform_server.h
+
+
 ## Acknowledgments
 Environment compatibility reference for TFF and TF inspired by:  
 📎 https://hackmd.io/@thc1006/SJx5Ve1Iee  
